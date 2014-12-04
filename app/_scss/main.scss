@@ -189,11 +189,14 @@ nav {
     font-size: 1.5em !important;
     color: #c8c8c8 !important;
     letter-spacing: 0.7px !important;
+    &:hover {
+      background-color: rgba(255,255,255,0.2) !important;
+    }
   }
 
   .active a {
     border-bottom: solid 1px white !important;
-    background-color: initial !important;
+    background-color: rgba(255,255,255,0.08) !important;
   }
 }
 
