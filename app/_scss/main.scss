@@ -14,7 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: small;
   text-align: center;
 }
@@ -159,13 +159,60 @@ a:visited { color: #a0a; }
   background-color: #333;
 }
 
+header {
+ height: 370px;
+ box-sizing: content-box;
+ background-image: url(/img/background_header.gif);
+}
+
 .profile-picture {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
-  background: url(/img/profile.jpg) no-repeat;
+  background: url(/img/profile.jpg);
+  background-size: cover;
+  background-position: 33% 0;
 }
+
+nav {
+  background-color: rgba(0,0,0,0.2) !important;
+  position: absolute !important;
+  border: none !important;
+  width: 100% !important;
+
+  a {
+    color: white !important;
+    font-size: 1.5em !important;
+    color: #c8c8c8 !important;
+    letter-spacing: 0.7px !important;
+  }
+
+  .active a {
+    border-bottom: solid 1px white !important;
+    background-color: initial !important;
+  }
+}
+
+header {
+  color: white;
+  padding: 80px 0 20px 0;
+
+  h1 {
+    font-size: 4.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.7em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
