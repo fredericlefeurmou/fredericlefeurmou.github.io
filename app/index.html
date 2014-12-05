@@ -10,7 +10,15 @@ title: My Blog
     <span class="date">{{ post.date }}</span>
   </p>
   <div class="content">
-    {{ post.content }}
+    {% if post.content contains "--more--" %}
+      {{ post.content | split:"--more--" | first % }}
+    {% else %}
+      {{ post.content | strip_html | truncatewords:200 }}
+    {% endif %}
+
+    {% if post.content | size > 200 %}
+        <div><a href="{{ post.url }}">Read more...</a></div>
+    {% endif %}
   </div>
 {% endfor %}
 
