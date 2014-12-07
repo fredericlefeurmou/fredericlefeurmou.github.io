@@ -34,9 +34,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-                {% for page in site.pages_list %}
-                <li><a href="{{ page[1] }}">{{ page[0] }}</a></li>
+                {% for link in site.pages_list %}
+                  {% assign active = nil %}
+                  {% assign directory = page.url | remove: "index.html" %}
+                  {% if directory == link[1] %}
+                    {% assign active = 'active' %}
+                  {% endif %}
+                  <li class="{{ active }}"><a href="{{ link[1] }}">{{ link[0] }}</a></li>
                 {% endfor %}
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -66,15 +70,12 @@
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a href="https://github.com/fredericlefeurmou">github.com/fredericlefeurmou</a><br />
+                <a href="https://twitter.com/fredericlefeurmou">twitter.com/fredericlefeurmou</a><br />
               </p>
             </div>
           </div>
         </div>
-
-    <script src="/_bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/_bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- build:js({app,.tmp}) /js/scripts.js -->
     <script src="/js/main.js"></script>
