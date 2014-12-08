@@ -31,5 +31,5 @@ pygments: true
 
 pages_list:
   Home: '/'
-  About: '/about/'
   Projects: '/projects/'
+  About: '/about/'
