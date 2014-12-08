@@ -186,10 +186,13 @@ header {
   .more {
     color: #aaa;
   }
-  h1 a {
-    color: #303030;
+  h2 {
+    color: #515151;
     font-weight: bold;
     font-size: 1.5em;
+  }
+  h2 a {
+    color: inherit;
   }
 }
 
