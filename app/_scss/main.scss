@@ -140,7 +140,6 @@ nav {
   width: 100% !important;
 
   a {
-    color: white !important;
     font-size: 1.5em !important;
     color: #c8c8c8 !important;
     letter-spacing: 0.7px !important;
@@ -211,3 +210,28 @@ footer {
   }
 }
 
+
+@media screen and (max-width: 767px) {
+  .nav {
+    a {
+      color: white !important;
+      font-size: 2em !important;
+    }
+    .active {
+      a {
+        text-decoration: underline !important;
+        border-bottom: none !important;
+        background-color: inherit !important;
+        &:hover {
+          background-color: rgba(255,255,255,0.2) !important;
+        }
+      }
+    }
+    // background-color: black !important;
+  }
+  .navbar-nav {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+}
