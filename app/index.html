@@ -11,14 +11,10 @@ title: Frederic Le Feurmou - Web developer - Home
     <span class="date">{{ post.date | date_to_string }}</span>
   </p>
   <div class="content">
-    {% if post.content contains "--more--" %}
-      {{ post.content | split:"--more--" | first % }}
-    {% else %}
-      {{ post.content | strip_html | truncatewords:200 }}
-    {% endif %}
+    {{ post.excerpt }}
 
-    {% if post.content | size > 200 %}
-        <a class="more" href="{{ post.url }}">... Read more</a>
+    {% if post.excerpt != post.content %}
+      <a href="{{ post.url }}" class="more">Continue reading →</a>
     {% endif %}
   </div>
 </div>
