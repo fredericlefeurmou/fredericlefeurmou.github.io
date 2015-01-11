@@ -3,12 +3,12 @@ layout: post
 title:  "Create your own static blog with Jekyll"
 date:   2015-01-10
 categories: jekyll
-excerpt: Hi everyone, today I decided to start my own blog to share about technology. For this first post I decided to talk about how I created this blog.
+excerpt: Hi everyone, today I decided to start my own blog to share about technology. For this first post will talk about how I created this blog.
 ---
 
 Hi everyone, today I decided to start my own blog to share about technology.
 
-For this first post I decided to talk about how I created this blog. I wanted it to be fast, stable and easy to maintain. After some research I finally chose to use Jekyll, an open source software to generate static websites. But what is a static website and why is it so great to build little blogs like this one?
+For this first post will talk about how I created this blog. I wanted it to be fast, stable and easy to maintain. After some research I finally chose to use Jekyll, an open source software to generate static websites. But what is a static website and why is it so great to build little blogs like this one?
 
 A static website is a website without any dynamic content, it means that the content served for one url is always the same (unlike on a forum for instance).
 
