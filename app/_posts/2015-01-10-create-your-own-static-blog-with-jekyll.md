@@ -6,11 +6,14 @@ categories: jekyll
 excerpt: Hi everyone, today I decided to start my own blog to share about technology. For this first post will talk about how I created this blog.
 ---
 
+![jekyll logo](/img/jekyll-logo.png)
+
+
 Hi everyone, today I decided to start my own blog to share about technology.
 
 For this first post will talk about how I created this blog. I wanted it to be fast, stable and easy to maintain. After some research I finally chose to use Jekyll, an open source software to generate static websites. But what is a static website and why is it so great to build little blogs like this one?
 
-A static website is a website without any dynamic content, it means that the content served for one url is always the same (unlike on a forum for instance).
+A static website is a website without any dynamic content, it means that the content served for one url is always the same (unlike a forum for instance).
 
 There is some advantages to that:
 
@@ -27,11 +30,10 @@ Sounds awesome, let's do this!
 
 To kickstart my new blog with a set of best practices (contatenation, minification, files revving, etc.) I decided to use [yeoman](http://yeoman.io/) with the [jekyllrb generator](https://github.com/robwierzbowski/generator-jekyllrb) but you can choose to skip this step and follow the regular installation process on [this page](http://jekyllrb.com/docs/installation/).
 
-To install yeoman, just install [Node.js](http://nodejs.org/) and run the following command with [npm](https://www.npmjs.com/): `npm install -g yo`.
-Then install our jekyllrb generator with `npm install -g generator-jekyllrb`.
+To install yeoman, you need to install [Node.js](http://nodejs.org/) first and then run the following command with [npm](https://www.npmjs.com/): `npm install -g yo`.
+Then install the jekyllrb generator with `npm install -g generator-jekyllrb`.
 
-Ok we now have everything we need to create our blog. Just go into your website root directory and run `yo jekyllrb
-` and let the yeoman assistant guide you through this process (if you don't know what to answer, just leave the default value).
+Ok we now have everything we need to create our blog. Just go into your website root directory, run `yo jekyllrb` and let the yeoman assistant guide you through this process (if you don't know what to answer to a question, just leave the default value).
 
 Now run `grunt serve` and your blog should appear in your browser, otherwise go to `localhost:9000`.
 
