@@ -113,8 +113,11 @@ a:visited { color: #a0a; }
   margin-bottom: 2em;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
- height: 370px;
  margin-bottom: 3em;
  box-sizing: content-box;
  background-image: url(/img/background_header.gif);
