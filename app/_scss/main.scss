@@ -110,7 +110,14 @@ a:visited { color: #a0a; }
 }
 
 .post {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
+  & > header {
+    margin-bottom: 20px;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
   h1 {
     margin-bottom: 1rem;
   }
@@ -121,16 +128,45 @@ a:visited { color: #a0a; }
   p, ul, ol {
     margin-bottom: 3rem;
   }
+  img.small {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+.pagination {
+  margin-top: 0;
 }
 
 img {
   max-width: 100%;
 }
 
-header {
+header.header-main {
  margin-bottom: 3em;
  box-sizing: content-box;
  background-image: url(/img/background_header.gif);
+ color: white;
+ padding: 80px 0 20px 0;
+ margin-bottom: 40px;
+
+ div.profile-picture {
+   margin-bottom: 20px;
+ }
+
+ h1 {
+   font-size: 4.5em;
+   font-weight: 500;
+   margin-top: 0;
+   margin-bottom: 10px;
+ }
+
+ h2 {
+   font-size: 1.7em;
+   font-weight: 200;
+   margin-top: 0;
+   margin-bottom: 20px;
+ }
 }
 
 .profile-picture {
@@ -167,29 +203,9 @@ nav {
   }
 }
 
-header {
-  color: white;
-  padding: 80px 0 20px 0;
-  // margin-bottom: 20px;
-
-  h1 {
-    font-size: 4.5em;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  p {
-    font-size: 1.7em;
-    font-weight: 200;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-}
-
 .site {
   color: #515151;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: left;
   margin-bottom: $footer-height;
   a {
@@ -201,12 +217,13 @@ header {
   h1, h2, h3, h4, h5, h6 {
     color: #515151;
     font-weight: bold;
+    margin-top: 0;
     & a {
       color: inherit;
     }
   }
   h1 {
-    font-size: 1.6em;
+    font-size: 3rem;
   }
   h2 {
     font-size: 1.3em;

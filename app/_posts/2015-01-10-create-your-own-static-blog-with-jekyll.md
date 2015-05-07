@@ -6,7 +6,7 @@ categories: jekyll
 excerpt: Hi everyone, today I decided to start my own blog to share about technology. For this first post will talk about how I created this blog.
 ---
 
-![jekyll logo](/img/jekyll-logo.png)
+<img src="/img/jekyll-logo.png" class="small" alt="jekyll logo">
 
 
 Hi everyone, today I decided to start my own blog to share about technology.

@@ -6,15 +6,17 @@ title: Frederic Le Feurmou - Web developer - Home
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
 <div class="post">
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date_to_string }}</span>
-  </p>
+  <header class="header-post">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <div class="author">
+      <span class="date">{{ post.date | date_to_string }}</span>
+    </div>
+  </header>
   <div class="content">
     {{ post.excerpt }}
 
     {% if post.excerpt != post.content %}
-      <a href="{{ post.url }}" class="more">Read More →</a>
+      <a href="{{ post.url }}" class="more">Read&nbsp;More&nbsp;→</a>
     {% endif %}
   </div>
 </div>
