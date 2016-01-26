@@ -19,6 +19,9 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
+gems :
+  - jekyll-paginate
+
 permalink: none
 paginate: 5
 paginate_path: 'page:num'
